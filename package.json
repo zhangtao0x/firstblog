@@ -1,8 +1,10 @@
 {
     "name":"first-blog",
-    "version":"0.0.1",
+    "version":"0.1.1",
     "author":"ZeroTao",
+    "description":"this is a blog website",
     "dependencies":{
-        "express":"4.x"
+        "express":"4.x",
+	"pygmentize-bundled":"2.3.0"
     }
 }
