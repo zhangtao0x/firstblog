@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var fs = require('fs');
 var func = require('./src/function.js');
+var md = require('./src/md2html');
 
 app.get('/',function(req,res){
 	var html = '';
@@ -30,8 +31,11 @@ app.get('/blogs/:year/:month/:day/:title',function(req,res){
 		if(err)
 			res.send(err);
 		else
-			res.send(data);
-	})
+			md.md2html(data,function(err,content){
+				if(err) res.send(err);
+				res.send(content);
+			});
+	});
 })
 
 app.get('*',function(req,res){

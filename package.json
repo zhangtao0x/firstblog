@@ -5,6 +5,8 @@
     "description":"this is a blog website",
     "dependencies":{
         "express":"4.x",
-	"pygmentize-bundled":"2.3.0"
+        "pygmentize-bundled":"2.3.0",
+        "jade":"*",
+        "mongodb":"*"
     }
 }
