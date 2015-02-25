@@ -1,0 +1,8 @@
+{
+    "name":"first-blog",
+    "version":"0.0.1",
+    "author":"ZeroTao",
+    "dependencies":{
+        "express":"4.x"
+    }
+}
